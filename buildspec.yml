@@ -23,8 +23,7 @@ phases:
       - pip install -e .
   build:
     commands:
-      - cd tests
-      - python test.py
+      - python setup.py sdist bdist_wheel
      
   post_build:
     commands:
