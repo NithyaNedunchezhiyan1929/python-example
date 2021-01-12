@@ -6,7 +6,9 @@ version: 0.2
      # key: "There are no variables"
   #parameter-store:
      # key: "There are no variables"
-
+env:
+    variables:
+        BUILD_FOLDER: "build"
 phases:
   install:
     #If you use the Ubuntu standard image 2.0 or later, you must specify runtime-versions.
@@ -29,7 +31,7 @@ phases:
 
 artifacts:
     files:
-        - '*/*'
+        - '**/*'
     base-directory: 'build*'
     discard-paths: yes
 #cache:
