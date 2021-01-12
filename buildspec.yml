@@ -27,6 +27,9 @@ phases:
     commands:
       - python setup.py sdist bdist_wheel
 
+artifacts:
+    base-directory: 'dist*'
+    discard-paths: yes
 #cache:
   #paths:
     # - We don't currently cache anything
