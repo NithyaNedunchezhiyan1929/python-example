@@ -23,7 +23,8 @@ phases:
       - pip install -e .
   build:
     commands:
-      - pytest tests/
+      - cd tests
+      - python test.py
      
   post_build:
     commands:
